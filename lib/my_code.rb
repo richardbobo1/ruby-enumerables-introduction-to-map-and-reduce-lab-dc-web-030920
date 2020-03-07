@@ -42,5 +42,10 @@ end
 
 
 def reduce_to_any_true(source_array)
-  source_array.reduce {|i| i}
+  
+    if !source_array
+      return false 
+      end
+       return true 
+
 end
