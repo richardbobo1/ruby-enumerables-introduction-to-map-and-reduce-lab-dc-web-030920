@@ -43,15 +43,14 @@ end
 
 def reduce_to_any_true(source_array)
   
-  counter = 0 
-  while counter < source_array.length do 
-    if !source_array[counter] 
-      return false 
-
-   end 
-        counter += 1
+  #counter = 0 
+  #while counter < source_array.length do 
+    if source_array[counter].any? 
+      return true 
+  # end 
+ #       counter += 1
   
-end
-       return true
+#end
+#       return true
 
 end
